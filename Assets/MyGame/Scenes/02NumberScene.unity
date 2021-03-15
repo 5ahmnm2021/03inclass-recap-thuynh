@@ -499,6 +499,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af0f962d22161f49a8ec19e3708ca08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  A: {fileID: 1598260386}
+  B: {fileID: 747617751}
+  Result: 0
+  TxtResult: {fileID: 312883951}
+  Error: {fileID: 1820852408}
+  Red: {r: 1, g: 0, b: 0, a: 1}
+  White: {r: 1, g: 1, b: 1, a: 1}
+  InputAFl: 0
+  InputBFl: 0
 --- !u!4 &696463765
 Transform:
   m_ObjectHideFlags: 0
@@ -1104,7 +1113,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1065184012}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 696463764}
+        m_TargetAssemblyTypeName: controller, Assembly-CSharp
+        m_MethodName: AddNumbers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1065184012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,10 +1368,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1426,10 +1447,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
