@@ -3,22 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-public class controller : MonoBehaviour
+public class Controller : MonoBehaviour
 {
-    
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void ChangeScene()
     {
         SceneManager.LoadScene("01ColorScene");
@@ -38,11 +24,6 @@ public class controller : MonoBehaviour
     public InputField b;
     public int result;
     public Text txtResult;
-    public Text error;
-    public Color red = Color.red;
-    public Color white = Color.white;
-    //private int inputAInt;
-    //private int inputBInt;
     public bool num1 = true;
     public bool num2 = true;
 
@@ -50,33 +31,34 @@ public class controller : MonoBehaviour
     {
        int inputAInt = 0;
        int inputBInt = 0;
+       string errorMsg = "Enter two valid numbers";
 
         try
         {
             inputAInt = int.Parse(a.text);
             num1 = true;
-            a.image.color = white;
+            a.image.color = Color.white;
         }
 
         catch(System.Exception)
         {
             num1 = false;
-            a.image.color = red;
-            error.text = "Please enter a number";
+            a.image.color = Color.red;
+            a.text = errorMsg;
         }
 
         try
         {
             inputBInt = int.Parse(b.text);
             num2 = true;
-            b.image.color = white;
+            b.image.color = Color.white;
         }
 
         catch (System.Exception)
         {
             num2 = false;
-            b.image.color = red;
-            error.text = "Please enter a number";
+            b.image.color = Color.red;
+            b.text = errorMsg;
         }
 
         Debug.Log("a" + inputAInt + " b" + inputBInt);
@@ -89,7 +71,6 @@ public class controller : MonoBehaviour
             txtResult.text = result.ToString();
         }
         
-        //Result = int.Parse(a.text) + int.Parse(B.text);
         
 
     }

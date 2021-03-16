@@ -214,7 +214,7 @@ GameObject:
   - component: {fileID: 312883952}
   - component: {fileID: 312883951}
   m_Layer: 5
-  m_Name: Text
+  m_Name: result
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -503,11 +503,9 @@ MonoBehaviour:
   b: {fileID: 747617751}
   result: 0
   txtResult: {fileID: 312883951}
-  error: {fileID: 1820852408}
-  red: {r: 1, g: 0, b: 0, a: 1}
-  white: {r: 1, g: 1, b: 1, a: 1}
-  inputAFl: 0
-  inputBFl: 0
+  error: {fileID: 0}
+  num1: 0
+  num2: 0
 --- !u!4 &696463765
 Transform:
   m_ObjectHideFlags: 0
@@ -754,7 +752,7 @@ GameObject:
   - component: {fileID: 811637223}
   - component: {fileID: 811637222}
   m_Layer: 5
-  m_Name: Text
+  m_Name: +
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -936,7 +934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188, y: -120}
+  m_AnchoredPosition: {x: 188, y: -170}
   m_SizeDelta: {x: 70, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &924161083
@@ -1068,7 +1066,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -144, y: -120}
+  m_AnchoredPosition: {x: -144, y: -169.99997}
   m_SizeDelta: {x: 70, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065184011
@@ -1620,7 +1618,7 @@ GameObject:
   - component: {fileID: 1658945157}
   - component: {fileID: 1658945156}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: =
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1699,7 +1697,7 @@ GameObject:
   - component: {fileID: 1820852409}
   - component: {fileID: 1820852408}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
