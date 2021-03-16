@@ -499,15 +499,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af0f962d22161f49a8ec19e3708ca08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  A: {fileID: 1598260386}
-  B: {fileID: 747617751}
-  Result: 0
-  TxtResult: {fileID: 312883951}
-  Error: {fileID: 1820852408}
-  Red: {r: 1, g: 0, b: 0, a: 1}
-  White: {r: 1, g: 1, b: 1, a: 1}
-  InputAFl: 0
-  InputBFl: 0
+  a: {fileID: 1598260386}
+  b: {fileID: 747617751}
+  result: 0
+  txtResult: {fileID: 312883951}
+  error: {fileID: 1820852408}
+  red: {r: 1, g: 0, b: 0, a: 1}
+  white: {r: 1, g: 1, b: 1, a: 1}
+  inputAFl: 0
+  inputBFl: 0
 --- !u!4 &696463765
 Transform:
   m_ObjectHideFlags: 0
