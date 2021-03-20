@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Controller : MonoBehaviour
@@ -12,12 +10,10 @@ public class Controller : MonoBehaviour
     public void ChangeScenetoNum()
     {
         SceneManager.LoadScene("02NumberScene");
-
     }
     public void ChangeScenetoWelcome()
     {
         SceneManager.LoadScene("00WelcomeScene");
-
     }
 
     public InputField a;
@@ -29,9 +25,9 @@ public class Controller : MonoBehaviour
 
     public void AddNumbers()
     {
-       int inputAInt = 0;
-       int inputBInt = 0;
-       string errorMsg = "Enter two valid numbers";
+        int inputAInt = 0;
+        int inputBInt = 0;
+        string errorMsg = "Enter valid number";
 
         try
         {
@@ -39,8 +35,7 @@ public class Controller : MonoBehaviour
             num1 = true;
             a.image.color = Color.white;
         }
-
-        catch(System.Exception)
+        catch (System.Exception)
         {
             num1 = false;
             a.image.color = Color.red;
@@ -53,7 +48,6 @@ public class Controller : MonoBehaviour
             num2 = true;
             b.image.color = Color.white;
         }
-
         catch (System.Exception)
         {
             num2 = false;
@@ -61,20 +55,33 @@ public class Controller : MonoBehaviour
             b.text = errorMsg;
         }
 
-        Debug.Log("a" + inputAInt + " b" + inputBInt);
-
-        Debug.Log(num1+" "+num2);
         if (num1 && num2)
         {
             result = inputAInt + inputBInt;
-            Debug.Log(result);
             txtResult.text = result.ToString();
-        }
-        
-        
+        } 
 
     }
 
+    public Image colorField;
+    public void ChangeColor()
+    {
+        Color[] colors =
+        {
+            new Color32(255, 205, 25, 100),
+            new Color32(95, 34, 0, 100),
+            new Color32(207, 63, 21, 100),
+            new Color32(102, 47, 84, 100),
+        };
 
+        if (Input.GetKeyDown("space"))
+        {
+            colorField.color = colors[Random.Range(0, colors.Length)];
+        }
+    }
+    void Update()
+    {
+        ChangeColor();
+    }
 
 }

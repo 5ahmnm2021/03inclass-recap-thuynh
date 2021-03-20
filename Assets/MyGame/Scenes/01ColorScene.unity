@@ -490,6 +490,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af0f962d22161f49a8ec19e3708ca08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  a: {fileID: 0}
+  b: {fileID: 0}
+  result: 0
+  txtResult: {fileID: 0}
+  num1: 1
+  num2: 1
+  colorField: {fileID: 784543193}
 --- !u!4 &811747569
 Transform:
   m_ObjectHideFlags: 0
